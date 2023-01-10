@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>bobominez</title>
+    <link rel="shortcut icon" href="zyro-image (5).png">
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+    <script>
+      function onload(){
+        document.getElementById('okay').style.display = "none";
+        document.getElementById('no-way').style.display = "none";
+        document.getElementById('h').style.display = "none";
+      }
+      function changeOpacity() {
+        document.getElementById('scene').classList.add('opacity-low');
+        document.getElementById('look').classList.add('bruh');
+        document.getElementById('scene').innerHTML = 'P';
+        setTimeout("document.getElementById('scene').innerHTML = 'Ps';", 150);
+        setTimeout("document.getElementById('scene').innerHTML = 'Pss';", 300);
+        setTimeout("document.getElementById('scene').innerHTML = 'Psss';", 450);
+        setTimeout("document.getElementById('scene').innerHTML = 'Pssst';", 600);
+        setTimeout("document.getElementById('scene').innerHTML = 'Pssst!';", 750);
+
+        setTimeout("document.getElementById('e1').innerHTML = '>>';", 1050);
+        
+      }
+      function message1() {
+        document.getElementById('e1').style.display = "none";
+        document.getElementById('scene').innerHTML = 'C';
+        setTimeout("document.getElementById('scene').innerHTML = 'Co';", 150);
+        setTimeout("document.getElementById('scene').innerHTML = 'Com';", 300);
+        setTimeout("document.getElementById('scene').innerHTML = 'Come';", 450);
+        setTimeout("document.getElementById('scene').innerHTML = 'Come ';", 600);
+        setTimeout("document.getElementById('scene').innerHTML = 'Come w';", 750);
+        setTimeout("document.getElementById('scene').innerHTML = 'Come wi';", 900);
+        setTimeout("document.getElementById('scene').innerHTML = 'Come wit';", 1050);
+        setTimeout("document.getElementById('scene').innerHTML = 'Come with';", 1200);
+        setTimeout("document.getElementById('scene').innerHTML = 'Come with ';", 1350);
+        setTimeout("document.getElementById('scene').innerHTML = 'Come with m';", 1500);
+        setTimeout("document.getElementById('scene').innerHTML = 'Come with me';", 1650);
+        setTimeout("document.getElementById('scene').innerHTML = 'Come with me!';", 1700);
+        setTimeout("document.getElementById('okay').style.display = 'block';", 2200);
+        setTimeout("document.getElementById('no-way').style.display = 'block';", 2700);
+      }
+      function message2() {
+        document.getElementById('okay').style.display = "none";
+        document.getElementById('no-way').style.display = "none";
+        document.getElementById('scene').innerHTML = 'F';
+        setTimeout("document.getElementById('scene').innerHTML = 'Fi';", 150);
+        setTimeout("document.getElementById('scene').innerHTML = 'Fin';", 300);
+        setTimeout("document.getElementById('scene').innerHTML = 'Fine';", 450);
+        setTimeout("document.getElementById('scene').innerHTML = 'Fine.';", 600);
+        setTimeout("document.getElementById('look').classList.add('yes');", 1111);
+        setTimeout("document.getElementById('scene').style.display = 'none';", 2222);
+        setTimeout("document.getElementById('h').style.display = 'block';", 5000);
+
+      }
+    </script>
+    <style media="screen">
+        html{
+          font-family: 'Common Pixel', sans-serif;
+          overflow: hidden;
+        }
+        .look{
+          height: 100px;
+          position: relative;
+          left: -40px;
+          transform: rotate(90deg);
+          z-index: 1;
+          transition: top, 1s;
+        }
+        .look:hover{
+          left: -35px;
+        }
+        .bruh{
+          left: -35px;
+        }
+        .scene{
+          opacity: 0;
+        }
+        .opacity-low {
+          display: inline-block;
+          position: relative; 
+          background-color:black; 
+          color: white; 
+          padding-top: 10px; 
+          padding-bottom: 50px; 
+          opacity: 1;
+          padding-right: 10%;
+          padding-left: 1%;
+          transition: padding-right 0.01s;
+          top: 25px;
+          left: -60px;
+        }
+        .e{
+          position: relative;
+          font-weight:900;
+          color: white;
+          opacity: 1;
+          top: 25px;
+          left: -100px;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          transition: opacity 0.025s;
+        }
+        .e:active{
+          opacity: 0.5;
+        }
+        .choice1{
+          display: flex;
+          column-gap: 20px;
+          position: relative;
+          top: -5px;
+          left: 65px;
+          margin-left: 1%;
+
+        }
+        .no-way:active{
+          opacity: 0.5;
+        }
+        .okay:active{
+          opacity: 0.5;
+        }
+        .no-way, .okay{
+          font-family: 'Common Pixel', sans-serif;
+          border: none;
+          background-color: transparent;
+          color:white;
+          z-index:2;
+          cursor: pointer;
+          opacity: 1;
+        }
+        .yes{
+          left: -500px;
+          transition: left 5s;
+        }
+        .h{
+          text-align: center;
+        }
+    </style>
+  </head>
+  <body onload="onload();">
+    <h1 id="h" class="h">RELOAD THE PAGE</h1>
+  </body>
+  <footer>
+    <img src="zyro-image (7) (1).png" id="look" onclick="changeOpacity();" class="look"><img>
+    <div id="scene" class="scene"></div>
+    <button class="e" onclick="message1();" id="e1"></button>
+    <div class="choice1">
+      <button class="okay" id="okay">Okay</button>
+      <button class="no-way" onclick="message2();" id="no-way">No Way</button>
+    </div>
+  </footer>
+</html>
