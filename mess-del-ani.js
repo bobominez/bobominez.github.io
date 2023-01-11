@@ -44,6 +44,6 @@ function message2() {
   setTimeout("document.getElementById('scene').innerHTML = 'Fine.';", 600);
   setTimeout("document.getElementById('look').classList.add('yes');", 1111);
   setTimeout("document.getElementById('scene').style.display = 'none';", 2222);
-  setTimeout("document.getElementById('h').style.display = 'block';", 5000);
+  setTimeout("document.getElementById('h').style.display = 'block';", 4444);
 
 }
